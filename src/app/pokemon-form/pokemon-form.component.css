@@ -1,0 +1,26 @@
+.container-c{
+    margin-top: 20px;
+    border: 2px solid rgb(205 209 209);
+    padding: 8px;
+}
+
+.title-form{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.txt-lbl{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input[type=text].txt-input{
+    font-size: 16px;
+    font-weight: 400;
+    height: 35px;
+    border: 2px solid rgb(205 209 209);
+    border-radius: 0px;
+    padding: 0px 10px;
+}

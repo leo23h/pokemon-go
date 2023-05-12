@@ -1,0 +1,15 @@
+input[type=text].txt-input-search{
+    font-size: 16px;
+    font-weight: 700;
+    height: 35px;
+    border: 2px solid rgb(205 209 209);
+    border-radius: 0px;
+    padding: 0px 10px;
+}
+
+input[type=text].txt-input-search::placeholder{
+    font-family: 'FontAwesome';
+    color :rgb(205 209 209);
+    font-size: 16px;
+}
+

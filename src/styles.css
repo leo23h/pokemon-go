@@ -1,1 +1,183 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/fonts/OpenSans-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  background-image: url("/src/assets/background_screen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0px 60px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 600;
+  padding: 40px 0px;
+}
+
+/* FILAS Y COLUMNAS */
+.d-flex{
+  display: flex;
+}
+
+.row{
+  display: flex;
+}
+
+.col-4{
+  width: 35%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-12{
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-end{
+  justify-content: end;
+}
+
+.justify-content-start{
+  justify-content: start;
+}
+
+.py-20{
+  padding: 20px 0px;
+}
+
+.py-10{
+  padding: 10px 0px;
+}
+
+.pt-30{
+  padding-top: 30px;
+}
+
+.mx-15{
+  padding: 0px 15px;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.font-size-20{
+  font-size: 20px;
+}
+
+/* SLIDE RANGE */
+input[type="range"]::-moz-range-progress {
+  background-color: #6658f2;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #cdd1d1;
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #6658f2;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #cdd1d1;
+}
+
+input[type="range"] {
+  overflow: hidden;
+  width: 165px;
+  height: 10px;
+  -webkit-appearance: none;
+  background-color: #cdd1d1;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: #cdd1d1;
+  margin-top: -1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 18px;
+  -webkit-appearance: none;
+  height: 18px;
+  /* border-radius: 50%; */
+  cursor: ew-resize;
+  background: white;
+  box-shadow: -80px 0 0 80px #6658f2;
+}
+
+/* TABLE */
+table, td, th {
+  border: 2px solid rgb(205 209 209);
+  padding: 5px 14px;
+}
+
+th{
+  width: 20%;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+
+td{
+  width: 20%;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.btn-custom{
+  height: 36px;
+  font-size: 16px;
+  background-color: rgb(102 88 246);
+  color: white;
+  border-radius: 3px;
+  width: 120px;
+  border: none;
+}
+
+.btn-custom:disabled{
+  height: 36px;
+  font-size: 16px;
+  background-color: rgb(205 209 209);
+  color: white;
+}

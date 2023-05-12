@@ -1,0 +1,49 @@
+<div class="container-c">
+    <div class="col-12 py-10 text-center">
+        <span class="title-form">{{title}} Pokemon</span>
+    </div>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="row py-10">
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <label class="txt-lbl mx-15">Nombre: </label>
+              <input type="text" formControlName="name" class="txt-input" name="name" id="name" >
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <label class="txt-lbl mx-15">Ataque: </label>
+                <span class="txt-range">0</span>
+                <input type="range" formControlName="attack" name="range_attack" id="range_attack" min="0" max="100">
+                <span class="txt-range">100</span>
+            </div>
+        </div>
+        <div class="row py-10">
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <label class="txt-lbl mx-15">Imagen:</label>
+              <input type="text" class="txt-input" formControlName="image" name="image" id="image" >
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <label class="txt-lbl mx-15">Defensa: </label>
+                <span class="txt-range">0</span>
+                <input type="range"  name="range_defense" formControlName="defense" id="range_defense" min="0" max="100">
+                <span class="txt-range">100</span>
+            </div>
+        </div>
+        <div class="row py-10">
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <label class="txt-lbl mx-15">HP:</label>
+                <input type="text" class="txt-input" formControlName="hp" name="hp" id="hp" >
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <label class="txt-lbl mx-15">Tipo:</label>
+                <input type="text" class="txt-input" formControlName="type" name="type" id="type" >
+            </div>
+        </div>
+        <div class="row pt-30">
+            <div class="col-6 d-flex justify-content-end mx-15">
+                <button type="submit" class="btn-custom" [disabled]="!myForm.valid"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+                <button class="btn-custom" (click)="cancel()"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
+            </div>
+        </div>
+    </form>
+</div>
